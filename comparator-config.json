@@ -1,0 +1,23 @@
+{
+  "challenge_module": "Challenge",
+  "solution_module": "Solution",
+  "theorem_names": [
+    "PrimeSumset.sumset_card_gt_904",
+    "PrimeSumset.overlap_bound",
+    "PrimeSumset.goldbach_density",
+    "PrimeSumset.goldbach_exception_bound",
+    "PrimeSumset.energy_ceiling",
+    "PrimeSumset.sumset_card_ge_of_sieve_ceiling",
+    "PrimeSumset.sumset_card_gt_const_of_sieve_ceiling",
+    "PrimeSumset.per_diff_of_pair_bound",
+    "PrimeSumset.energy_ceiling_of_prime_pair_sieve",
+    "PrimeSumset.sumset_card_ge_of_prime_pair_sieve",
+    "PrimeSumset.sumset_card_gt_of_prime_pair_sieve",
+    "PrimeSumset.sumset_card_gt_of_prime_pair_sieve_concrete",
+    "PrimeSumset.sumset_ge_cited_density",
+    "PrimeSumset.energy_eq_minor_arc_integral",
+    "PrimeSumset.minor_arc_energy_bound"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice", "Lean.ofReduceBool", "Lean.trustCompiler", "sorryAx"],
+  "enable_nanoda": false
+}
