@@ -1,0 +1,28 @@
+{
+  "challenge_module": "Challenge",
+  "solution_module": "Solution",
+  "theorem_names": [
+    "PrimeSumset.sum_rAdd",
+    "PrimeSumset.energy_eq_sum_sq",
+    "PrimeSumset.energy_eq_diff_corr",
+    "PrimeSumset.overlap_card_mul_sq_le_energy",
+    "PrimeSumset.cauchy_schwarz_compression",
+    "PrimeSumset.sumset_lower_of_energy_ceiling",
+    "PrimeSumset.sumset_card_ge_of_energy_ceiling",
+    "PrimeSumset.sumset_card_gt_of_energy_ceiling",
+    "PrimeSumset.mass_pos",
+    "PrimeSumset.Aset_nonempty",
+    "PrimeSumset.Bset_nonempty",
+    "PrimeSumset.three_le_primeIdx_of_trigger",
+    "PrimeSumset.rAdd_pos_iff",
+    "PrimeSumset.rAdd_pos_even",
+    "PrimeSumset.energy_ceiling",
+    "PrimeSumset.sumset_card_gt_904",
+    "PrimeSumset.overlap_bound",
+    "PrimeSumset.goldbach_density",
+    "PrimeSumset.goldbach_exception_bound",
+    "PrimeSumset.GM2_form_factor_matching_structured"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice", "Lean.ofReduceBool", "Lean.trustCompiler", "sorryAx"],
+  "enable_nanoda": false
+}
