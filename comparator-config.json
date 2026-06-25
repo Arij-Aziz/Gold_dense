@@ -1,0 +1,28 @@
+{
+  "challenge_module": "Challenge",
+  "solution_module": "Solution",
+  "theorem_names": [
+    "PrimeSumset.sumset_card_gt_95",
+    "PrimeSumset.goldbach_density",
+    "PrimeSumset.goldbach_exception_bound",
+    "RestrictedGoldbach.sumset_card_gt_95",
+    "RestrictedGoldbach.restricted_exceptional_bound",
+    "RestrictedGoldbach.card_sumset_eq_pi_sub_eset",
+    "RestrictedGoldbach.sumset_card_ge_pi_sub_eset",
+    "PrimeSumset.cauchy_schwarz_compression",
+    "PrimeSumset.sumset_card_ge_of_energy_ceiling",
+    "PrimeSumset.energy_eq_sum_sq",
+    "PrimeSumset.energy_eq_diff_corr",
+    "PrimeSumset.sum_rAdd",
+    "RestrictedGoldbach.add_Aset_Bset_even",
+    "RestrictedGoldbach.add_Aset_Bset_range",
+    "RestrictedGoldbach.card_evens_Ico",
+    "RestrictedGoldbach.restricted_major_arc_asymptotic",
+    "RestrictedGoldbach.rAdd_pos_iff",
+    "RestrictedGoldbach.primeIdx1_pos",
+    "PrimeSumset.three_le_primeIdx_of_trigger",
+    "PrimeSumset.mass_pos"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice", "Lean.ofReduceBool", "Lean.trustCompiler", "sorryAx"],
+  "enable_nanoda": false
+}
