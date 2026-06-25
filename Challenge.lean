@@ -173,7 +173,23 @@ theorem goldbach_exception_bound_improved {i : ℕ} (hi : i > trigger) :
 end PrimeSumset
 
 -- ══════════════════════════════════════════════════════════════════════════
--- §2.  Original 0.95 density
+-- §2.  Asymptotic coverage: |C|/pᵢ → 1
+--      Source: RestrictedGoldbachGap.lean
+-- ══════════════════════════════════════════════════════════════════════════
+
+namespace RestrictedGoldbach
+
+/- **coverage_tends_to_one**
+   |C|/pᵢ → 1 as i → ∞. -/
+theorem coverage_tends_to_one :
+    Filter.Tendsto (fun i : ℕ => ((PrimeSumset.sumset (Aset i) (Bset i)).card : ℝ) / (primeIdx1 i : ℝ))
+      Filter.atTop (nhds 1) := by
+  sorry
+
+end RestrictedGoldbach
+
+-- ══════════════════════════════════════════════════════════════════════════
+-- §3.  Original 0.95 density
 --      Sources: RestrictedGoldbachMain.lean, MainTheorem.lean
 -- ══════════════════════════════════════════════════════════════════════════
 
@@ -204,7 +220,7 @@ theorem sumset_card_gt_95 {i : ℕ} (hi : i > trigger) :
 end PrimeSumset
 
 -- ══════════════════════════════════════════════════════════════════════════
--- §3.  Tier‑1 analytic gap
+-- §4.  Tier‑1 analytic gap
 --      Source: RestrictedGoldbachExceptionalSet.lean
 -- ══════════════════════════════════════════════════════════════════════════
 
@@ -222,7 +238,7 @@ theorem restricted_exceptional_bound {i : ℕ} (hi : 10 ^ 15 < i) :
 end RestrictedGoldbach
 
 -- ══════════════════════════════════════════════════════════════════════════
--- §4.  Combinatorial backbone
+-- §5.  Combinatorial backbone
 --      Source: RestrictedGoldbachCombinatorics.lean
 -- ══════════════════════════════════════════════════════════════════════════
 
@@ -247,7 +263,7 @@ theorem sumset_card_ge_pi_sub_eset {i : ℕ} (hi : 10 ^ 15 < i) :
 end RestrictedGoldbach
 
 -- ══════════════════════════════════════════════════════════════════════════
--- §5.  Additive-energy combinatorics
+-- §6.  Additive-energy combinatorics
 --      Source: AdditiveEnergy.lean
 -- ══════════════════════════════════════════════════════════════════════════
 
@@ -292,7 +308,7 @@ lemma sum_rAdd (A B : Finset ℤ) :
 end PrimeSumset
 
 -- ══════════════════════════════════════════════════════════════════════════
--- §6.  Set combinatorics
+-- §7.  Set combinatorics
 --      Source: RestrictedGoldbachCombinatorics.lean
 -- ══════════════════════════════════════════════════════════════════════════
 
@@ -322,7 +338,7 @@ lemma card_evens_Ico (pi : ℕ) :
 end RestrictedGoldbach
 
 -- ══════════════════════════════════════════════════════════════════════════
--- §7.  Obligation A — major‑arc asymptotic
+-- §8.  Obligation A — major‑arc asymptotic
 --      Source: RestrictedGoldbachMajorArc.lean
 -- ══════════════════════════════════════════════════════════════════════════
 
@@ -345,7 +361,7 @@ theorem restricted_major_arc_asymptotic (i : ℕ) (α : ℝ) :
 end RestrictedGoldbach
 
 -- ══════════════════════════════════════════════════════════════════════════
--- §8.  Basic membership / positivity
+-- §9.  Basic membership
 --      Sources: RestrictedGoldbachDefs.lean
 -- ══════════════════════════════════════════════════════════════════════════
 
@@ -358,11 +374,6 @@ open Finset
 lemma rAdd_pos_iff {i N : ℕ} :
     0 < PrimeSumset.rAdd (Aset i) (Bset i) (N : ℤ) ↔
     (N : ℤ) ∈ PrimeSumset.sumset (Aset i) (Bset i) := by
-  sorry
-
-/- **primeIdx1_pos**
-   The 1‑indexed prime pᵢ is positive for i ≥ 2. -/
-lemma primeIdx1_pos {i : ℕ} (hi : 2 ≤ i) : 0 < primeIdx1 i := by
   sorry
 
 end RestrictedGoldbach
